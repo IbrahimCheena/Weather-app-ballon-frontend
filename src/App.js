@@ -9,7 +9,7 @@ function App() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch("https://weather-balloon-app.onrender.com/");
+            const response = await fetch("https://weather-balloon-app.onrender.com/data");
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
